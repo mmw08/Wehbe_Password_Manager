@@ -1,0 +1,204 @@
+🔐 Secure Password Manager (CLI-Based)
+
+A command-line password manager built with Go, providing strong encryption, secure memory handling, and comprehensive protection for your sensitive data.
+
+Your passwords are safeguarded using AES-256-GCM encryption and scrypt key derivation — cryptographic standards trusted by governments and financial institutions.
+
+🧠 Important Note: All testing was performed on Windows 11 Command Prompt.
+
+🛡️ Security Highlights
+
+AES-256-GCM Encryption: Military-grade encryption protects your passwords.
+
+Scrypt Key Derivation: Memory-hard algorithm makes brute-force attacks impractical.
+
+Secure Memory Management: Multi-pass wiping and memory locking prevent data recovery.
+
+Auto-Lock Sessions: 2-minute inactivity timeout automatically secures your vault.
+
+Open Source: Fully auditable code – trust through transparency.
+
+⚙️ Required Software
+
+Go Programming Language (version 1.21 or later)
+
+Installation of Go
+
+Visit https://go.dev/dl/
+
+Download the installer for your OS:
+
+Windows: go1.21.x.windows-amd64.msi
+
+Verify installation:
+
+go version
+
+
+Expected output:
+
+go version go1.21.x windows/amd64
+
+🧩 Installation Guide
+Step 1: Download the Source Code
+
+Option A: Using Git
+
+git clone https://github.com/yourusername/secure-password-manager.git
+cd secure-password-manager
+
+
+Option B: Manual Download
+
+# Create a folder
+mkdir password-manager
+# Save provided code as main.go in this folder
+
+
+Open Command Prompt in this folder.
+
+Step 2: Install Required Dependencies
+
+Run the following commands:
+
+# Clipboard library (for copy/paste functionality)
+go get github.com/atotto/clipboard
+
+# Cryptography library (for scrypt key derivation)
+go get golang.org/x/crypto/scrypt
+
+# Terminal library (for secure password input)
+go get golang.org/x/term
+
+Step 3: Build the Application
+
+Windows:
+
+go build -o wehbe-password-manager.exe main.go
+
+Step 4: Run and Verify
+
+Run the application:
+
+wehbe-password-manager.exe
+
+
+You should see:
+
+📝 No database found. Let's create a new one!
+
+Master Password Requirements:
+ • At least 12 characters
+ • One uppercase letter (A-Z)
+ • One lowercase letter (a-z)
+ • One digit (0-9)
+ • One special character (!@#$%^&*...)
+
+
+Create your Master Password, confirm it, and view password strength feedback:
+
+💚 Password Strength: VERY STRONG
+✅ Database created successfully!
+
+🧭 Application Usage
+
+Once unlocked, you’ll see:
+
+⏱️  Auto-lock in: 1m 59s
+
+📋 MAIN MENU
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. 📝 Add New Password
+2. 🔍 Retrieve Password
+3. ✏️  Update Password
+4. 🗑️  Delete Password
+5. 📜 List All Passwords
+6. 🎲 Generate Random Password
+7. 🔍 Security Audit
+8. ☁️  Cloud Sync Setup
+9. 🔑 Change Master Password
+10. 🔒 Lock & Exit
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Select option (1-10):
+
+Menu Features
+Option	Description
+1	Add a new password (website, username, password, notes). The system can generate a random password.
+2	Retrieve a password by website name — choose to copy to clipboard (10 sec) or display on screen (10 sec).
+3	Update the password, username, or notes for an existing entry.
+4	Delete a saved password entry.
+5	List all stored website names and corresponding usernames.
+6	Generate a strong random password.
+7	Run a Security Audit to detect weak or duplicate passwords.
+8	Setup cloud sync (optional) to save an encrypted backup file to OneDrive.
+9	Change the master password (re-encrypts the entire database).
+10	Lock and exit — securely clears memory.
+
+⚠️ Important:
+If the master password is forgotten, all stored data is lost permanently.
+
+☁️ Multi-Device Usage
+Setup on First Device
+
+Enable cloud sync (option 8).
+
+Configure the cloud folder path (e.g., OneDrive).
+
+Lock and exit — this triggers the first sync.
+
+Setup on Additional Devices
+
+Install the password manager.
+
+Allow the cloud service to sync the passwords.db file.
+
+Copy passwords.db to your local folder.
+
+Run the application and unlock it.
+
+Enable cloud sync again, pointing to the same folder.
+
+🔒 Security Best Practices
+Every 6 Months:
+
+Change passwords for critical accounts (email, banking, etc.)
+
+Consider changing your master password
+
+Delete unused accounts
+
+Run a Security Audit (option 7)
+
+Check for weak passwords
+
+Check for duplicates
+
+🧠 Master Password Tips
+
+✅ Do:
+
+Use at least 16 characters (longer = stronger)
+
+Create a passphrase (e.g., I-Love-Coffee&Donuts!2024)
+
+Write it down and store it safely (physical safe recommended)
+
+Practice typing it before confirming
+
+Change it every 6–12 months
+
+🏁 Conclusion
+
+You now have a secure, open-source, and fully transparent password manager that empowers you to take control of your credentials.
+
+🧭 Golden Rules
+
+🔑 Strong Master Password: Single point of security — protect it well.
+
+💾 Regular Backups: Guard against data loss.
+
+🔍 Monthly Audits: Maintain password health.
+
+🔒 Lock When Away: Auto-timeout helps, but stay cautious.
+
+Stay Secure. Stay Private. Stay in Control.
