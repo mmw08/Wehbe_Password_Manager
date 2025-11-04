@@ -174,21 +174,20 @@ Select option (1-10):
 
 -----
 
-## ☁️ Multi-Device Usage
+## ☁️ Recover the file if lost
 
-### Setup on First Device
+### Setup cloud sync on Device
 
 1.  Enable cloud sync (**option 8**).
 2.  Configure the cloud folder path (e.g., OneDrive).
 3.  Lock and exit — this triggers the first sync.
 
-### Setup on Additional Devices
+### Setup if file is lost 
 
 1.  Install the password manager.
-2.  Allow the cloud service to sync the `passwords.db` file.
-3.  Copy `passwords.db` to your local folder.
+2.  Download `passwords.db` file.
+3.  Copy `passwords.db` to your local folder where password manager is exist.
 4.  Run the application and unlock it.
-5.  Enable cloud sync again, pointing to the same folder.
 
 -----
 
