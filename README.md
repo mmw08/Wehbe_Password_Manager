@@ -67,7 +67,7 @@ cd Wehbe_Password_Manager
 
 ```bash
 # Create a folder
-mkdir password-manager
+mkdir Wehbe_Password_Manager
 # Save provided code as main.go in this folder
 ```
 3. Save the code as main.go in this folder.
@@ -99,7 +99,7 @@ go get golang.org/x/term
 Windows:
 
 ```bash
-go build -o wehbe-password-manager.exe main.go
+go build -o Wehbe_Password_Manager.exe main.go
 ```
 
 ### Step 4: Run and Verify
@@ -107,7 +107,7 @@ go build -o wehbe-password-manager.exe main.go
 Run the application:
 
 ```bash
-wehbe-password-manager.exe
+Wehbe_Password_Manager.exe
 ```
 
 You should see:
