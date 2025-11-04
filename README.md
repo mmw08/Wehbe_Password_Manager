@@ -60,27 +60,29 @@ cd Wehbe_Password_Manager
 
 **Option B: Manual Download**
 
-Download the source code (the .go file provided)
+1. Download the source code (the .go file provided)
 
 
-Create a folder: mkdir password-manager
+2. Create a folder: mkdir password-manager
 
 ```bash
 # Create a folder
 mkdir password-manager
 # Save provided code as main.go in this folder
 ```
-Save the code as main.go in this folder.
-
-Open **Command Prompt** in this folder.
+3. Save the code as main.go in this folder.
+4. Open **Command Prompt** in this folder.
+5. run the below commend
+```bash
+#get the mod of GO in the directary you choose
+go mod init password-manager 
+```
 
 ### Step 2: Install Required Dependencies
 
 Run the following commands:
 
 ```bash
-#get the mod of GO in the directary you choose
-go mod init password-manager 
 
 # Clipboard library (for copy/paste functionality)
 go get github.com/atotto/clipboard
