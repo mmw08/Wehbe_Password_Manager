@@ -168,7 +168,7 @@ Select option (1-10):
 | **9** | Change the master password (re-encrypts the entire database). |
 | **10** | Lock and exit — securely clears memory. |
 
-> ⚠️ **Important:**
+# ⚠️ **Important:**
 >
 > If the master password is forgotten, all stored data is lost permanently.
 
@@ -203,15 +203,7 @@ Select option (1-10):
       * Check for weak passwords
       * Check for duplicates
 
-### 🧠 Master Password Tips
 
-| ✅ Do: |
-| :--- |
-| Use at least **16 characters** (longer = stronger) |
-| Create a **passphrase** (e.g., `I-Love-Coffee&Donuts!2024`) |
-| Write it down and store it safely (**physical safe recommended**) |
-| Practice typing it before confirming |
-| Change it every **6–12 months** |
 
 -----
 
