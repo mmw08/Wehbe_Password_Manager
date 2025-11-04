@@ -79,6 +79,9 @@ Open **Command Prompt** in this folder.
 Run the following commands:
 
 ```bash
+#get the mod of GO in the directary you choose
+go mod init password-manager 
+
 # Clipboard library (for copy/paste functionality)
 go get github.com/atotto/clipboard
 
