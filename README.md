@@ -59,13 +59,15 @@ cd secure-password-manager
 ```
 
 **Option B: Manual Download**
+Download the source code (the .go file provided)
+Create a folder: mkdir password-manager
 
 ```bash
 # Create a folder
 mkdir password-manager
 # Save provided code as main.go in this folder
 ```
-
+Save the code as main.go in this folder
 Open **Command Prompt** in this folder.
 
 ### Step 2: Install Required Dependencies
