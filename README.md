@@ -54,8 +54,8 @@ go version go1.21.x windows/amd64
 **Option A: Using Git**
 
 ```bash
-git clone https://github.com/yourusername/secure-password-manager.git
-cd secure-password-manager
+git clone https://github.com/mmw08/Wehbe_Password_Manager.git
+cd Wehbe_Password_Manager
 ```
 
 **Option B: Manual Download**
